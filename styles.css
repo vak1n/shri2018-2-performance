@@ -341,6 +341,11 @@
   justify-content: space-between;
   background: url("assets/sh.jpg") center center/cover no-repeat;
 }
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+  .main {
+    background: url("assets/sh.webp") center center/cover no-repeat;
+  }
+}
 .main__greeting {
   margin-top: 6px;
   font-size: 27px;
