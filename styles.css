@@ -308,6 +308,11 @@
   background-position: left top;
   background-size: cover;
 }
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+  .logo {
+    background-image: url("./assets/logo.webp");
+  }
+}
 .logo__ya {
   display: block;
   position: absolute;
