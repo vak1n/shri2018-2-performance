@@ -7,12 +7,9 @@ rangeSLider.oninput = function() {
 
 const arrowLeftDevs = document.querySelector('.devices__paginator .paginator__arrow_left');
 const arrowRightDevs = document.querySelector('.devices__paginator .paginator__arrow_right');
-const panelCountDevs = document.querySelectorAll('.devices__panel').length;
 const devices = document.querySelector('.devices');
-const pagiantorDevs = document.querySelector('.devices__paginator');
 let currentPageDevs = 1;
 
-pagiantorDevs.classList.toggle('paginator_hide', panelCountDevs < 7);
 
 arrowRightDevs.addEventListener('click', function () {
     currentPageDevs += 1;
@@ -27,7 +24,6 @@ arrowRightDevs.addEventListener('click', function () {
 arrowLeftDevs.addEventListener('click', function () {
   if (currentPageDevs > 1) {
     currentPageDevs -= 1;
-    arrowLeftDevs.classList.toggle('paginator__arrow_disabled', currentPageDevs === 1);
     devices.scroll({
       top: 0,
       left: -1366,
@@ -42,7 +38,6 @@ let maxRotate = 0.42; // 150 градусов
 let minRotate = -0.42; // -150 градусов
 
 const MIN_VALUE = 26;
-const MAX_VALUE = 35;
 const INDICATOR_OFFSET = 265;
 
 const rotateToValue = function(rotate) {
@@ -198,13 +193,9 @@ document.querySelectorAll('.panel_floor').forEach(p => {
 
 const arrowLeftScens = document.querySelector('.scenarios__paginator .paginator__arrow_left');
 const arrowRightScens = document.querySelector('.scenarios__paginator .paginator__arrow_right');
-const panelCountScens = document.querySelectorAll('.scenarios__panel').length;
 const pageCountScens = document.querySelectorAll('.scenarios__page').length;
 const scenarios = document.querySelector('.scenarios');
-const pagiantorScens = document.querySelector('.scenarios__paginator');
 let currentPage = 1;
-
-pagiantorScens.classList.toggle('paginator_hide', panelCountScens <= 9);
 
 arrowRightScens.addEventListener('click', function () {
   if (currentPage < pageCountScens) {
