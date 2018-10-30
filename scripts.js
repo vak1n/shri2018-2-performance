@@ -231,10 +231,3 @@ arrowLeftScens.addEventListener('click', function () {
     });
   }
 });
-
-const selectButton = document.querySelector('.filter__select-button');
-const popup = document.querySelector('.filter__select-popup');
-
-selectButton.addEventListener('click', function() {
-  popup.classList.toggle('filter__select-popup_open');
-});
