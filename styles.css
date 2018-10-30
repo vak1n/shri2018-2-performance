@@ -303,15 +303,11 @@
   width: 108px;
   height: 27px;
   position: relative;
-  background-image: url("./assets/logo.png");
+  /*background-image: url("./assets/logo.png");*/
+  background-image: url("./assets/logo.webp");
   background-repeat: no-repeat;
   background-position: left top;
   background-size: cover;
-}
-@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
-  .logo {
-    background-image: url("./assets/logo.webp");
-  }
 }
 .logo__ya {
   display: block;
@@ -339,12 +335,8 @@
   padding: 0 20px 0 25px;
   display: flex;
   justify-content: space-between;
-  background: url("assets/sh.jpg") center center/cover no-repeat;
-}
-@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
-  .main {
-    background: url("assets/sh.webp") center center/cover no-repeat;
-  }
+  /*background: url("assets/sh.jpg") center center/cover no-repeat;*/
+  background: url("assets/sh.webp") center center/cover no-repeat;
 }
 .main__greeting {
   margin-top: 6px;
