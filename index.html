@@ -7,7 +7,10 @@
     <title>Smarthome</title>
 
     <link rel="shortcut icon" href="favicon-3.png">
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="fonts/pt_sans.css" as="style" onload="this.rel='stylesheet'">
+    <script defer src="scripts.js"></script>
 </head>
 
 
@@ -384,11 +387,6 @@
     </div>
 
 </div>
-
-
-<script src="scripts.js"></script>
-
-<link href="fonts/pt_sans.css" rel="stylesheet">
 
 </body>
 
