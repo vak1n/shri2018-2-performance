@@ -5,10 +5,14 @@
   "main": "scripts.js",
   "dependencies": {},
   "devDependencies": {
+    "clean-css-cli": "^4.2.1",
     "html-minifier": "^3.5.21",
     "uglify-es": "^3.3.9"
   },
   "scripts": {
+    "minify-html": "",
+    "minify-css": "cleancss fonts/pt_sans.css -o fonts.css && cleancss styles.css -o index.css",
+    "minify-js": "uglifyjs scripts.js -o index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
